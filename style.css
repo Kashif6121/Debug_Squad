@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+nav {
+  background: linear-gradient(90deg, #004080, #0066cc);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  transform: translateY(-2px);
+}
+
+/* Headings */
+h1, h2, p {
+  text-align: center;
+  margin: 25px 0 15px;
+  color: #003366;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+form input, 
+form textarea, 
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, 
+form textarea:focus, 
+form select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0,102,204,0.3);
+  outline: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+form button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #004080;
+  transform: scale(1.02);
+}
+
+/* Issue Cards */
+.issue-card {
+  background: #fff;
+  border: none;
+  border-left: 5px solid #0066cc;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.issue-card:hover {
+  transform: translateY(-3px);
+}
+
+.issue-card h3 {
+  margin: 0 0 8px;
+  color: #004080;
+}
+
+.issue-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-pending {
+  background: #ffeeba;
+  color: #856404;
+}
+
+.status-inprogress {
+  background: #b8daff;
+  color: #004085;
+}
+
+.status-resolved {
+  background: #c3e6cb;
+  color: #155724;
+}
+
+/* Buttons */
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #004080;
+  transform: scale(1.05);
+}
+
+/* Login Input (home) */
+input#username {
+  display: block;
+  margin: 15px auto;
+  max-width: 250px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input#username:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0,102,204,0.3);
+}

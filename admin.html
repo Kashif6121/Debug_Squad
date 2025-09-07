@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="report.html">Report Issue</a>
+    <a href="myissues.html">My Issues</a>
+    <a href="admin.html">Admin Dashboard</a>
+  </nav>
+
+  <h2>Admin Dashboard</h2>
+
+  <div class="filters">
+    <select id="filterCategory" onchange="loadAllIssues()">
+      <option value="All">All Categories</option>
+      <option value="Road">Road</option>
+      <option value="Garbage">Garbage</option>
+      <option value="Water">Water</option>
+      <option value="Electricity">Electricity</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <select id="filterStatus" onchange="loadAllIssues()">
+      <option value="All">All Statuses</option>
+      <option value="Pending">Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </div>
+
+  <div id="allIssuesList" class="issue-container"></div>
+
+  <script src="script.js"></script>
+  <script>loadAllIssues();</script>
+</body>
+</html>
+

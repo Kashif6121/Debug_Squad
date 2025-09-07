@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Issue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="report.html">Report Issue</a>
+    <a href="myissues.html">My Issues</a>
+    <a href="admin.html">Admin Dashboard</a>
+  </nav>
+
+  <h2>Report an Issue</h2>
+  <form onsubmit="submitIssue(event)">
+    <input id="title" placeholder="Issue Title" required>
+    <textarea id="description" placeholder="Describe the issue..."></textarea>
+    <select id="category">
+      <option value="Road">Road</option>
+      <option value="Garbage">Garbage</option>
+      <option value="Water">Water</option>
+      <option value="Electricity">Electricity</option>
+      <option value="Other">Other</option>
+    </select>
+    <input id="location" placeholder="Location (e.g., Street, Area)">
+    <input id="photo" type="file" accept="image/*">
+    <button type="submit">Submit Issue</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
